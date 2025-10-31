@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+
+
+    <body>
+    <!-- Top Links -->
+    <div class="user-links">
+        <a href="login.html"><i class="fa fa-user"></i> Login / Register</a>
+    </div>
+
+    <hr />
+
+    <!-- Header -->
+    <header class="top-header">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://sharmajikaaata.com/wp-content/uploads/2021/11/logo-min-size.png" alt="Logo"
+                width="20em" />
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="I'm shopping for ..." />
+            <button><i class="fa fa-search"></i></button>
+        </div>
+
+        <!-- Icons -->
+        <div class="header-icons">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="32"
+                        d="M320 320H192M80 176a16 16 0 0 0-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 0 0-16-16Zm80 0v-32a96 96 0 0 1 96-96h0a96 96 0 0 1 96 96v32" />
+                </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-miterlimit="10" stroke-width="1.5"
+                        d="M16.55 3.084a5.452 5.452 0 0 1 3.852 9.307l-.648.654l-.86.854l-6.852 6.852L5.19 13.9l-.86-.854l-.648-.654a5.453 5.453 0 1 1 7.706-7.712l.654.654l.655-.654a5.45 5.45 0 0 1 3.852-1.595"
+                        clip-rule="evenodd" />
+                </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="m8 18.98l-.708-.713l3.095-3.094H3v-1h7.387l-3.095-3.094l.708-.713l4.308 4.307zm8-5.365l-4.308-4.307L16 5l.708.714l-3.094 3.094H21v1h-7.386l3.094 3.094z" />
+                </svg></a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Get Nutritionist</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+ 
+  <section class="our-story">
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>
+        Founded in the year 2015 by Sangeeta Prabhakar Sharma and Mr. Prabhakar Sharma,
+        Sharma Ji Ka Atta (MOHKANT VENTURES PRIVATE LIMITED) gives you freshly milled atta
+        of your own choice. We started it to provide a solution to people who are looking
+        for lower adulteration, healthier versions, and even lesser chemical content in
+        their daily food routine. The soils of the farms where the cultivation of these
+        staples happen haven’t been messed up and tempered with harsh chemicals and fertilizers.
+        We take pride in the fact that we don’t let contamination and compromises come in
+        the way of the purest harvests.
+      </p>
+      <p>
+        Starting from a small township in Pune, today we serve customers all across Pune.
+        Our vision turned into our passion to provide services to the residents of the
+        township due to no flour mill being present nearby. Our range of atta’s is freshly
+        milled with each batch of super nutritious grains. We consciously opt for grains
+        that you can customize as per your needs without compromising on quality. We ensure
+        that what reaches your plate doesn’t harm your palette.
+      </p>
+    </div>
+    <div class="story-image">
+      <img src="data:image/jpeg;base64,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" alt="Flour Image" />
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="services">
+    <div class="services-left">
+      <h2>What can we do for you ?</h2>
+
+      <details open>
+        <summary>Provide You with the Freshest Flours</summary>
+        <p>
+          From the farm to the plate, we provide an array of different aata options to choose from.
+          Milled in the naturally grown and non-tampered farms, your palatable dining experience
+          becomes our responsibility and we complete it wholeheartedly.
+        </p>
+      </details>
+
+      <details>
+        <summary>Ensure Hygiene</summary>
+        <p>
+          We maintain utmost hygiene in every step of milling and packaging, ensuring
+          clean and safe flour for your home.
+        </p>
+      </details>
+
+      <details>
+        <summary>Give You a Healthy Meal</summary>
+        <p>
+          Our atta is milled freshly to retain essential nutrients for a wholesome meal.
+        </p>
+      </details>
+
+      <details>
+        <summary>Eco-friendly Approach</summary>
+        <p>
+          We follow environmentally conscious practices to ensure sustainable production.
+        </p>
+      </details>
+    </div>
+
+    <div class="services-right">
+      <h3>Hour Of Operation</h3>
+      <ul>
+        <li><strong>Monday:</strong> 10–7PM</li>
+        <li><strong>Tuesday:</strong> 10–7PM</li>
+        <li><strong>Wednesday:</strong> 10–7PM</li>
+        <li><strong>Thursday:</strong> 10–7PM</li>
+        <li><strong>Friday:</strong> 10–7PM</li>
+        <li><strong>Saturday:</strong> 10–7PM</li>
+        <li><strong>Sunday:</strong> 10–7PM</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

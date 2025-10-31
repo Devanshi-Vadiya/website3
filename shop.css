@@ -1,0 +1,343 @@
+.user-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.user-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.user-links a:hover {
+  background-color: #f9c400;
+  color: #fff;
+}
+
+/* ---------- Header ---------- */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.logo img {
+  width: 15em;
+  height:3em;
+  border-radius: 50%;
+}
+
+/* ---------- Search Box ---------- */
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-box button {
+  background-color: #f9c400;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #e0ae00;
+}
+
+/* ---------- Header Icons ---------- */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons a {
+  color: #222;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.header-icons a:hover {
+  color: #f9c400;
+  transform: scale(1.1);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps it above other elements */
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding: 18px 0;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* ✨ Underline Animation */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #f9c400;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: #f9c400;
+}
+
+/* ---------- Hero Section ---------- */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+}
+
+/* Our Story Section */
+.our-story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 8%;
+  gap: 40px;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.story-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.story-image {
+  flex: 1;
+  text-align: center;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 8%;
+  gap: 50px;
+  background: #fafafa;
+}
+
+.services-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.services-left h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Pure CSS Accordion using details/summary */
+details {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  list-style: none;
+  position: relative;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s;
+  font-weight: 700;
+}
+
+details[open] summary::after {
+  content: "–";
+  color: #e6a100;
+}
+
+details[open] summary {
+  color: #e6a100;
+}
+
+details p {
+  padding: 0 20px 15px 20px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Right Section (Hours) */
+.services-right {
+  flex: 0.6;
+  min-width: 250px;
+}
+
+.services-right h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-right li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .our-story,
+  .services {
+    flex-direction: column;
+  }
+
+  .story-image img {
+    max-width: 100%;
+  }
+
+  .services-right {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .navbar ul {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .header-icons a {
+    font-size: 18px;
+  }
+}
